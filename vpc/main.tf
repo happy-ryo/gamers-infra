@@ -10,7 +10,7 @@ resource "aws_vpc" "gamers" {
   }
 }
 
-resource "aws_subne" "gamers" {
+resource "aws_subnet" "gamers" {
   vpc_id = aws_vpc.gamers.id
 
   cidr_block = "10.0.1.0/24"
